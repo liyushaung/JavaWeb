@@ -1,0 +1,75 @@
+*{
+    padding:0;
+    margin: 0;
+    /* background-color: #007130; */
+}
+body{
+    background-color:lightgray;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.nav{
+    background-color: #007130;
+    width: 450px;
+    margin: 0 auto;
+}
+
+.nav a {
+    display: block;
+    width: 150px;
+    text-align: center;
+    color: white;
+    background-color: #007130;
+}
+.nav a:hover{
+    background-color: orangered;
+}
+.drop-down>li{
+    float: left;
+    position: relative;
+}
+.drop-down>li:hover>ul{
+    display: block;
+}
+/* 二级菜单项 */
+.drop-down>li>ul{
+    display: none;
+    position: absolute;
+}
+/* 二级菜单子项 */
+.drop-down>li>ul>li{
+    position: relative;
+}
+.drop-down>li>ul>li:hover>ul{
+    display: block;
+}
+
+/* 三级菜单项 */
+.drop-down>li>ul>li>ul{
+    display: none;
+    position: absolute;
+    left:100%;
+    top:0;
+}
+/* 三级菜单子项 */
+/* .drop-down>li>ul>li>ul>li{
+    position: absolute;
+    /* left:100%;
+    top:0; */
+/* } */ */
+
+.clearfix{
+    *zoom:1;
+}
+.clearfix:after{
+    content:"";
+    display: block;
+    clear: both;
+
+    height: 0;
+    visibility: hidden;
+}
